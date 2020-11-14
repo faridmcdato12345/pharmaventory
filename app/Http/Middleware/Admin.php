@@ -16,12 +16,10 @@ class Admin
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::user()->role_id == '1'){
-            return $next($request);
+        if(!Auth::user()->role_id == '1'){
+            abort(403);
         }
-        else{
-            return redirect('/home')->with('status','You are not allowed to enter the admin dashboard!');
-        }
+        return $next($request);
         
     }
 }

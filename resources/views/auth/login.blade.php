@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>LASURECO | Log in</title>
+  <title>PHARMAVENTORY | Log in</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,8 +13,8 @@
 <body class="hold-transition login-page">
 <div class="login-box" id="app">
   <div class="login-logo">
-    <a href="#"><b>LASURECO</b></a>
-    <b>Wharehouse System</b>
+    <a href="#"><b>PHARMAVENTORY</b></a>
+    <p class="text-lg">Inventory and Point of Sale System</p>
   </div>
   <!-- /.login-logo -->
   <div class="card">

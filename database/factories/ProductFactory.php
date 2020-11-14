@@ -3,17 +3,18 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\Product;
+use Carbon\Carbon;
 use Faker\Generator as Faker;
 
 $factory->define(Product::class, function (Faker $faker) {
     return [
-        'unit_id' => 1,
-        'user_id' => 1,
         'barcode' => $faker->ean13,
         'description'=>$faker->word,
-        'price'=>100,
-        'quantity'=>1000,
+        'name'=>$faker->name,
+        'retail_price'=>'100',
+        'purchase_price'=>'100',
+        'quantity'=>'1000',
         'expiration' => '05/14/1990',
-        'size'=>'small',
+        'purchasedate' => Carbon::now(),
     ];
 });

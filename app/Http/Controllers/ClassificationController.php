@@ -8,12 +8,15 @@ use Illuminate\Http\Request;
 class ClassificationController extends Controller
 {
     public function store(){
-        Classification::create(request()->all());
+        Classification::create($this->dataValidate());
     }
     public function update(Classification $classification){
-        $classification->update(request()->all());
+        $classification->update($this->dataValidate());
     }
     public function destroy(Classification $classification){
         $classification->delete();
+    }
+    public function show(Classification $classification){
+        return $classification;
     }
 }

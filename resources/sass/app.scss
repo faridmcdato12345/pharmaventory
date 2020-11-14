@@ -1,15 +1,15 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
-// Variables
-@import 'variables';
-
-// Bootstrap
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~bootstrap/scss/bootstrap';
-@import '~admin-lte/dist/css/adminlte.min.css';
-body{
-    width: 100vw;
-    height: 100vh;
-    background: rgb(160,178,233);
-    background: radial-gradient(circle, rgba(160,178,233,1) 0%, rgba(125,125,240,1) 35%, rgba(41,115,233,1) 100%);
-}
+@import '~admin-lte/dist/css/adminlte.css';
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+

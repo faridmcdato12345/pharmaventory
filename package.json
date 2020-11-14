@@ -12,6 +12,8 @@
     "devDependencies": {
         "axios": "^0.19",
         "bootstrap": "^4.1.0",
+        "browser-sync": "^2.26.12",
+        "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^4.0.7",
@@ -24,6 +26,13 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "admin-lte": "^3.0.5"
+        "@fortawesome/fontawesome-free": "^5.14.0",
+        "admin-lte": "^3.0.5",
+        "datatables.net-bs4": "^1.10.21",
+        "datatables.net-buttons": "^1.6.4",
+        "datatables.net-buttons-bs4": "^1.6.3",
+        "jsbarcode": "^3.11.3",
+        "tailwindcss": "^1.8.10",
+        "vue-router": "^3.4.3"
     }
 }
